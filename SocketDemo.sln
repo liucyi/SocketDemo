@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket_Client", "Socket_Cli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket_Server", "Socket_Server\Socket_Server.csproj", "{9CFB94C1-5AE3-4CAD-99A3-0B8891F9DCCA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1", "1", "{EA998A53-EED6-440B-AD4C-0CBAA307E2D9}"
+	ProjectSection(SolutionItems) = preProject
+		1.txt = 1.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +29,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6BB0572F-1155-42D2-A61D-A28741D51602} = {EA998A53-EED6-440B-AD4C-0CBAA307E2D9}
+		{9CFB94C1-5AE3-4CAD-99A3-0B8891F9DCCA} = {EA998A53-EED6-440B-AD4C-0CBAA307E2D9}
 	EndGlobalSection
 EndGlobal
