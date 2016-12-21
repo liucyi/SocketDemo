@@ -3,14 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket_Client", "Socket_Client\Socket_Client.csproj", "{6BB0572F-1155-42D2-A61D-A28741D51602}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket_Client_1", "Socket_Client\Socket_Client_1.csproj", "{6BB0572F-1155-42D2-A61D-A28741D51602}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket_Server", "Socket_Server\Socket_Server.csproj", "{9CFB94C1-5AE3-4CAD-99A3-0B8891F9DCCA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket_Server_1", "Socket_Server\Socket_Server_1.csproj", "{9CFB94C1-5AE3-4CAD-99A3-0B8891F9DCCA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1", "1", "{EA998A53-EED6-440B-AD4C-0CBAA307E2D9}"
 	ProjectSection(SolutionItems) = preProject
 		1.txt = 1.txt
+		socket-1.jpg = socket-1.jpg
+		socket-2.gif = socket-2.gif
+		C:\Users\Administrator\Desktop\socket-3.png = C:\Users\Administrator\Desktop\socket-3.png
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2", "2", "{2D5B9FD4-4224-4A20-8100-F95D2FA1F441}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket_Client_2", "Socket_Client_2\Socket_Client_2.csproj", "{C353CDAA-3D33-4F9E-BFA7-4B43C34025C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket_Server_2", "Socket_Server_2\Socket_Server_2.csproj", "{4D898B98-6CBF-43E6-A07E-A3FAE5ACB056}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +35,14 @@ Global
 		{9CFB94C1-5AE3-4CAD-99A3-0B8891F9DCCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CFB94C1-5AE3-4CAD-99A3-0B8891F9DCCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CFB94C1-5AE3-4CAD-99A3-0B8891F9DCCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C353CDAA-3D33-4F9E-BFA7-4B43C34025C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C353CDAA-3D33-4F9E-BFA7-4B43C34025C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C353CDAA-3D33-4F9E-BFA7-4B43C34025C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C353CDAA-3D33-4F9E-BFA7-4B43C34025C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D898B98-6CBF-43E6-A07E-A3FAE5ACB056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D898B98-6CBF-43E6-A07E-A3FAE5ACB056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D898B98-6CBF-43E6-A07E-A3FAE5ACB056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D898B98-6CBF-43E6-A07E-A3FAE5ACB056}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -33,5 +50,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6BB0572F-1155-42D2-A61D-A28741D51602} = {EA998A53-EED6-440B-AD4C-0CBAA307E2D9}
 		{9CFB94C1-5AE3-4CAD-99A3-0B8891F9DCCA} = {EA998A53-EED6-440B-AD4C-0CBAA307E2D9}
+		{C353CDAA-3D33-4F9E-BFA7-4B43C34025C3} = {2D5B9FD4-4224-4A20-8100-F95D2FA1F441}
+		{4D898B98-6CBF-43E6-A07E-A3FAE5ACB056} = {2D5B9FD4-4224-4A20-8100-F95D2FA1F441}
 	EndGlobalSection
 EndGlobal

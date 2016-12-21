@@ -18,23 +18,23 @@ namespace Socket_Server
                 string host = "127.0.0.1";
                 IPAddress ip = IPAddress.Parse(host);
                 IPEndPoint ipe = new IPEndPoint(ip, port);
-                Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);//创建一个Socket类
-                s.Bind(ipe);//绑定2000端口
-                s.Listen(0);//开始监听
+                Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);//1.创建一个Socket类
+                s.Bind(ipe);//2.绑定2000端口
+                s.Listen(0);//3.开始监听
                 Console.WriteLine("Wait for connect");
-                Socket temp = s.Accept();//为新建连接创建新的Socket。
+                Socket temp = s.Accept();//4.为新建连接创建新的Socket。
                 Console.WriteLine("Get a connect");
                 string recvStr = "";
                 byte[] recvBytes = new byte[1024];
                 int bytes;
-                bytes = temp.Receive(recvBytes, recvBytes.Length, 0);//从客户端接受信息
+                bytes = temp.Receive(recvBytes, recvBytes.Length, 0);//5.从客户端接受信息
                 recvStr += Encoding.ASCII.GetString(recvBytes, 0, bytes);
                 Console.WriteLine("Server Get Message:{0}", recvStr);//把客户端传来的信息显示出来
                 string sendStr = "Ok!Client Send Message Sucessful!";
                 byte[] bs = Encoding.ASCII.GetBytes(sendStr);
-                temp.Send(bs, bs.Length, 0);//返回客户端成功信息
+                temp.Send(bs, bs.Length, 0);//6.返回客户端成功信息
                 temp.Close();
-                s.Close();
+                s.Close();//7.关闭
             }
             catch (ArgumentNullException e)
             {
