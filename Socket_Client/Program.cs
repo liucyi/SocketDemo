@@ -21,10 +21,12 @@ namespace Socket_Client
                 Socket c = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);//创建一个Socket
                 Console.WriteLine("Conneting...");
                 c.Connect(ipe);//连接到服务器
-                string sendStr = "hello!This is a socket test";
+
+                string sendStr = "hello!This is a socket test"+ Console.ReadLine();
                 byte[] bs = Encoding.ASCII.GetBytes(sendStr);
                 Console.WriteLine("Send Message");
                 c.Send(bs, bs.Length, 0);//发送测试信息
+
                 string recvStr = "";
                 byte[] recvBytes = new byte[1024];
                 int bytes;
